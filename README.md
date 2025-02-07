@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+### Get up and running:
 
 ```bash
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Automated accessibility tests built in
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I wanted to create a starter project that has automated accessibility tests built in from the start. This project is using jest and [jest-axe](https://www.npmjs.com/package/jest-axe). Such a great tool provided by the folks over at [Deque](https://www.deque.com).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Using a custom render method, utilising react-testing-library, we can wrap our components in our tests and have accessibility checks run automagically.
 
-## Learn More
+## Things to note
 
-To learn more about Next.js, take a look at the following resources:
+1. Automated accessibility checks apparently only catch around 30% of accessibiltiy violations. They are not a silver bullet. Be mindful to have a well rounded approach to accessibility. There are many great resources on the web. [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) is the obvious place to start. I also really enjoyed snooping through this project: [Inclusive Components](https://inclusive-components.design/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Next.js out the box uses SWC as it's compiler, so there is a small work around to configure jest using @swc/jest. No big shakes, should just work via the commands above.
