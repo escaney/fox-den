@@ -1,6 +1,5 @@
-/** @format */
 import { renderWithA11y } from '@/_internal/react-testing-library';
-import React from 'react';
+import React from 'react'
 import Heading, { HeadingSize } from '.';
 
 describe('Component - Atoms - Heading', () => {

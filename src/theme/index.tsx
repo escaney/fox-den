@@ -1,4 +1,3 @@
-/** @format */
 import { ThemeProvider } from "@material-tailwind/react";
 
 // for example

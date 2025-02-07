@@ -1,5 +1,6 @@
-/** @format */
 import { renderWithA11y } from '@/_internal/react-testing-library';
+// import { render } from '@testing-library/react'
+
 import React from 'react';
 import BadButton from '.';
 

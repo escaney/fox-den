@@ -1,5 +1,4 @@
-/** @format */
-import { Queries, queries } from '@testing-library/dom';
+import { Queries, queries } from '@testing-library/dom'
 import { RenderOptions, render } from '@testing-library/react'
 import React, { JSXElementConstructor, ReactElement } from 'react'
 import { axe, toHaveNoViolations } from 'jest-axe';
