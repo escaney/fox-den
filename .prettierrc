@@ -1,0 +1,14 @@
+{
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "singleQuote": true,
+    "insertPragma": true,
+    "tabWidth": 2,
+    "importOrder": [
+        "^helpers(.*)$",
+        "^hooks(.*)$",
+        "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+}

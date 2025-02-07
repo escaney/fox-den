@@ -1,4 +1,6 @@
-import { ThemeProvider } from "@material-tailwind/react";
+/** @format */
+
+import { ThemeProvider } from '@material-tailwind/react';
 
 // for example
 // import colors from './colors';

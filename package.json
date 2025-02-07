@@ -10,7 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@types/material-ui": "^0.21.18",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
